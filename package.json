@@ -1,0 +1,20 @@
+{
+  "name": "fake-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "teams": "tsc *.ts --outDir out && vite-node out/index.js team 3",
+    "players": "tsc *.ts && vite-node --outDir out out/index.js player 5",
+    "events": "tsc *.ts && vite-node --outDir out out/index.js events 0",
+    "lineup": "tsc *.ts && vite-node --outDir out out/index.js lineup 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@types/node": "^20.10.5",
+    "vite-node": "^1.1.0"
+  }
+}
